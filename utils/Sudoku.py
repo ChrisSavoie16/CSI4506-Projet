@@ -26,8 +26,8 @@ class Square:
     def get_domain(self):
         return self.domain
 
-    def set_clue(self, isClue):
-        self.isClue = isClue
+    def set_clue(self, is_clue):
+        self.isClue = is_clue
 
     def is_clue(self):
         return self.isClue
