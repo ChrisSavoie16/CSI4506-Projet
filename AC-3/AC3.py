@@ -51,3 +51,31 @@ def isconsistent(csp, x, Xi, Xj):
 	return False
 
 
+#DISPLAYS THE SUDOKU IN THE GRID FORMAT
+def display(values):
+    for r in rows:
+    	if r in 'DG':
+    		print ("------------------------------------------------------------------------------")
+    	for c in cols:
+    		if c in '47':
+    			print (' | ', values[r+c], ' ',end=' ')
+    		else:
+    			print (values[r+c], ' ',end=' ')
+    	print (end='\n')
+
+        
+
+#CHECKS IF THE SUDOKU IS COMPLETE OR NOT
+def isComplete(csp):
+	for variable in squares:
+		if len(csp.values[variable])>1:
+			return False
+	return True
+
+
+#WRITES THE SOLVED SUDOKU IN THE FORM OF A STRING
+def write(values):
+	output = ""
+	for variable in squares:
+		output = output + values[variable]
+	return output
