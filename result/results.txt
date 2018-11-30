@@ -1,0 +1,135 @@
+Start time of program:  2018-11-30T00:33:02.807368
+
+Start of 5 basic comparison
+
+Total backtrack time:  1702.512205839157
+Minimum backtrack time:  0.0008018016815185547
+Maximum backtrack time:  428.93387746810913
+
+Total AC3 time:  12.491332769393921
+Minimum AC3 time:  0.028768301010131836
+Maximum AC3 time:  0.047315120697021484
+
+Total backtrack after AC3 time:  438.66295552253723
+Minimum backtrack after AC3 time:  4.1961669921875e-05
+Maximum backtrack after AC3 time:  111.72990489006042
+
+Total combined time:  451.15428829193115
+Minimum combined time:  0.03168797492980957
+Maximum combined time:  111.75983667373657
+
+Total backtrack time:  1712.6149322986603
+Minimum backtrack time:  0.0008091926574707031
+Maximum backtrack time:  434.0243058204651
+
+Total AC3 time:  12.545102596282959
+Minimum AC3 time:  0.028671979904174805
+Maximum AC3 time:  0.0493776798248291
+
+Total backtrack after AC3 time:  441.71196699142456
+Minimum backtrack after AC3 time:  4.220008850097656e-05
+Maximum backtrack after AC3 time:  114.38576412200928
+
+Total combined time:  454.2570695877075
+Minimum combined time:  0.031464576721191406
+Maximum combined time:  114.41556143760681
+
+Total backtrack time:  1717.7729930877686
+Minimum backtrack time:  0.0008001327514648438
+Maximum backtrack time:  432.2466802597046
+
+Total AC3 time:  12.615407705307007
+Minimum AC3 time:  0.028744935989379883
+Maximum AC3 time:  0.04726076126098633
+
+Total backtrack after AC3 time:  443.4165804386139
+Minimum backtrack after AC3 time:  4.1961669921875e-05
+Maximum backtrack after AC3 time:  113.0765495300293
+
+Total combined time:  456.0319881439209
+Minimum combined time:  0.03140735626220703
+Maximum combined time:  113.1068263053894
+
+Total backtrack time:  1714.2114670276642
+Minimum backtrack time:  0.0008170604705810547
+Maximum backtrack time:  436.41816806793213
+
+Total AC3 time:  12.483400583267212
+Minimum AC3 time:  0.028751373291015625
+Maximum AC3 time:  0.04500007629394531
+
+Total backtrack after AC3 time:  441.7506458759308
+Minimum backtrack after AC3 time:  4.2438507080078125e-05
+Maximum backtrack after AC3 time:  113.84324049949646
+
+Total combined time:  454.234046459198
+Minimum combined time:  0.03141021728515625
+Maximum combined time:  113.87316584587097
+
+Total backtrack time:  1698.0885162353516
+Minimum backtrack time:  0.0008068084716796875
+Maximum backtrack time:  428.3830029964447
+
+Total AC3 time:  12.421754360198975
+Minimum AC3 time:  0.028697967529296875
+Maximum AC3 time:  0.038086652755737305
+
+Total backtrack after AC3 time:  438.50599217414856
+Minimum backtrack after AC3 time:  4.267692565917969e-05
+Maximum backtrack after AC3 time:  111.63283896446228
+
+Total combined time:  450.92774653434753
+Minimum combined time:  0.03151512145996094
+Maximum combined time:  111.66309428215027
+
+Start of 5 basic analysis
+
+Decrease count:  37
+Maximum decrease time:  0.03730154037475586
+Minimum decrease time:  0.0002694129943847656
+Average decrease time:  0.016579801971847948
+
+Improvement count:  363
+Maximum improvement time:  311.6072883605957
+Minimum improvement time:  0.0018763542175292969
+Average improvement time:  3.4720546549016778
+
+Decrease count:  37
+Maximum decrease time:  0.03732943534851074
+Minimum decrease time:  0.0010495185852050781
+Average decrease time:  0.016669891976021433
+
+Improvement count:  363
+Maximum improvement time:  317.45464181900024
+Minimum improvement time:  0.0014338493347167969
+Average improvement time:  3.4745788193274465
+
+Decrease count:  37
+Maximum decrease time:  0.03725075721740723
+Minimum decrease time:  0.0014791488647460938
+Average decrease time:  0.016698534424240526
+
+Improvement count:  363
+Maximum improvement time:  314.27863597869873
+Minimum improvement time:  0.0037386417388916016
+Average improvement time:  3.442706513339166
+
+Decrease count:  37
+Maximum decrease time:  0.03746795654296875
+Minimum decrease time:  0.0019412040710449219
+Average decrease time:  0.01680968258831952
+
+Improvement count:  363
+Maximum improvement time:  320.1879801750183
+Minimum improvement time:  0.002844095230102539
+Average improvement time:  3.448202399182911
+
+Decrease count:  37
+Maximum decrease time:  0.037045955657958984
+Minimum decrease time:  0.0008602142333984375
+Average decrease time:  0.01659622707882443
+
+Improvement count:  363
+Maximum improvement time:  324.2190372943878
+Minimum improvement time:  0.003823995590209961
+Average improvement time:  3.4651541151619485

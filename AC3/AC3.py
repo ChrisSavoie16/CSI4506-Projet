@@ -27,17 +27,17 @@ def AC3(sudoku):
 
 def revise(source_square, target_square):
     """
-
+    Checks if domain can be reduced. If so, return True, otherwise False
     :param source_square:
     :param target_square:
     :return:
     """
     revised = False
-    if len(target_square.get_domain()) == 1:
+    if len(target_square.domain) == 1:
         try:
-            source_square.get_domain().remove(target_square.get_domain()[0])
+            source_square.domain.remove(target_square.domain[0])
             revised = True
-            if len(source_square.get_domain()) == 1:
+            if len(source_square.domain) == 1:
                 source_square.is_clue = True
         except ValueError:
             pass

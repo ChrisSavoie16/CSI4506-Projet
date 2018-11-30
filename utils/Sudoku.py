@@ -14,8 +14,8 @@ class Sudoku:
         for i in range(9):
             for j in range(9):
                 square = self.get_square(i, j)
-                if square.get_is_clue():
-                    string += str(square.get_domain()[0])
+                if square.is_clue:
+                    string += str(square.domain[0])
                 else:
                     string += "0"
             string += "\n"
@@ -75,21 +75,9 @@ class Square:
                     self.constraints.append(arc)
 
     def __str__(self):
-        return "Clue: " + str(self.is_clue()) + "\n" + "Domain" + str(self.get_domain()) + "\n"
+        return "Clue: " + str(self.is_clue) + "\n" + "Domain" + str(self.domain) + "\n"
 
     def __eq__(self, square):
         if isinstance(square, Square):
-            return self.is_clue== square.is_clue and self.get_domain() == square.get_domain()
+            return self.is_clue == square.is_clue and self.domain == square.domain
         return False
-
-    def set_domain(self, domain):
-        self.domain = domain
-
-    def get_domain(self):
-        return self.domain
-
-    def set_clue(self, is_clue):
-        self.is_clue = is_clue
-
-    def get_is_clue(self):
-        return self.is_clue
