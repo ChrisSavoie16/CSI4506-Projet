@@ -1,5 +1,11 @@
 def backtrack_solve(sudoku):
+    """
+    The main implementation that solves the sudoku using a backtrack algorithm
+    :param sudoku: sudoku to solve
+    :return: return the sudoku if already solved. modifies original sudoku if already solved
+    """
     solved = False
+    # Build solution space
     solution = []
     for i in range(9):
         solution.append([])
@@ -11,6 +17,7 @@ def backtrack_solve(sudoku):
                 solution[i].append(0)
 
     row, column, domain_position = find_start_point(sudoku)
+    #if row is out of range, sudoku is already solved
     if row > 8:
         return sudoku
 
@@ -39,6 +46,13 @@ def backtrack_solve(sudoku):
 
 
 def is_valid_assignment(solution, row, column):
+    """
+    Checks if the assigned number in the solution space is valid
+    :param solution: the solution space
+    :param row: row assigned
+    :param column: column assigned
+    :return: boolean
+    """
     for i in range(9):
         if i != column and solution[row][i] != 0 and solution[row][i] == solution[row][column]:
             return False
@@ -62,6 +76,12 @@ def is_valid_assignment(solution, row, column):
 
 
 def find_start_point(sudoku):
+    """
+    Program finds the start point. Essential the first square that is not a clue.
+    If none is found, returns 9,9,9, meaning the sudoku is already solved.
+    :param sudoku: the Sudoku instance that we are trying to solve
+    :return: row, column, domain_index to start at
+    """
     for i in range(9):
         for j in range(9):
             square = sudoku.get_square(i, j)
@@ -71,6 +91,15 @@ def find_start_point(sudoku):
 
 
 def backtrack(sudoku, solution, row, column, domain_position):
+    """
+    finds the next starting point of the backtrack algorithm
+    :param sudoku: the sudoku trying to be solved
+    :param solution: the solution space
+    :param row: current row
+    :param column: current column
+    :param domain_position: current domain position
+    :return: row, column, domain_position starting point
+    """
     i = row
     j = column
     k = domain_position

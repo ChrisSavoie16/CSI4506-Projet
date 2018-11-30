@@ -1,11 +1,13 @@
-class Sudoku:
+from utils.Arc import *
 
+
+class Sudoku:
     def __init__(self):
         self.board = []
         for i in range(9):
             self.board.append([])
             for j in range(9):
-                self.board[i].append(Square())
+                self.board[i].append(Square(i, j))
 
     def __str__(self):
         string = ""
@@ -40,9 +42,37 @@ class Sudoku:
 
 class Square:
 
-    def __init__(self):
+    def __init__(self, row, column):
+        self.row = row
+        self.column = column
         self.domain = [1, 2, 3, 4, 5, 6, 7, 8, 9]
         self.is_clue = False
+        self.constraints = []
+        for i in range(9):
+            if i != column:
+                source = Coordinate(row, column)
+                target = Coordinate(row, i)
+                arc = Arc(source, target)
+                self.constraints.append(arc)
+
+        for j in range(9):
+            if j != row:
+                source = Coordinate(row, column)
+                target = Coordinate(j, column)
+                arc = Arc(source, target)
+                self.constraints.append(arc)
+
+        box_row = row // 3
+        box_column = column // 3
+        for i in range(3):
+            for j in range(3):
+                compare_row = 3 * box_row + i
+                compare_column = 3 * box_column + j
+                if compare_row != row and compare_column != column:
+                    source = Coordinate(row, column)
+                    target = Coordinate(compare_row, compare_column)
+                    arc = Arc(source, target)
+                    self.constraints.append(arc)
 
     def __str__(self):
         return "Clue: " + str(self.is_clue()) + "\n" + "Domain" + str(self.get_domain()) + "\n"
