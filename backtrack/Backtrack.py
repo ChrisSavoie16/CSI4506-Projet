@@ -42,7 +42,7 @@ def backtrack_solve(sudoku):
         for j in range(9):
             square = sudoku.get_square(i, j)
             square.is_clue = True
-            square.domain = solution[i][j]
+            square.domain = [solution[i][j]]
 
 
 def is_valid_assignment(sudoku, solution, row, column):
