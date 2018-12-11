@@ -133,3 +133,18 @@ Improvement count:  363
 Maximum improvement time:  324.2190372943878
 Minimum improvement time:  0.003823995590209961
 Average improvement time:  3.4651541151619485
+Start time of program:  2018-12-09T15:35:35.581439
+
+Start of 5 basic comparison
+Start time of program:  2018-12-09T15:39:55.585781
+
+Start of 5 basic comparison
+Start time of program:  2018-12-09T15:59:19.832387
+
+Start of 5 basic comparison
+Start time of program:  2018-12-09T15:59:23.975219
+
+Start of 5 basic comparison
+Start time of program:  2018-12-09T15:59:27.425016
+
+Start of 5 basic comparison
